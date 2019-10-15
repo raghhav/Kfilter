@@ -98,7 +98,7 @@ class KfilterView @JvmOverloads constructor(context: Context,
         }
     }
 
-    fun setContentPath(path: String) {
+    fun setContentPath(path: String?) {
         contentFile = KfilterMediaFile(path)
         openContent()
     }
