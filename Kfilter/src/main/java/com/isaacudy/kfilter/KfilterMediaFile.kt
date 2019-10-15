@@ -29,7 +29,6 @@ internal class KfilterMediaFile(val path: String) {
         val mimeType = MimeTypeMap.getSingleton().getMimeTypeFromExtension(extension)
 
         when {
-            mimeType.startsWith("video") -> processAsVideo()
             mimeType.startsWith("image") -> processAsImage()
             else -> error = MediaError.ERROR_INVALID_FILE_TYPE
         }
